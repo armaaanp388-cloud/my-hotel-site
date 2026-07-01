@@ -3,44 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Indigo Inn - Khargone</title>
-    <!-- CSS for styling -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Hotel Indigo Inn | Luxury Stay</title>
     <style>
-        .hero-section { background-color: #0d6efd; color: white; padding: 60px 20px; text-align: center; }
-        .gallery-img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+        body { margin: 0; font-family: 'Playfair Display', serif; background-color: #000; color: #fff; }
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('screenshot1.jpg'); background-size: cover; text-align: center; }
+        h1 { font-size: 3rem; margin: 0; color: #d4af37; } /* Gold color */
+        .btn { padding: 15px 40px; border: 2px solid #d4af37; color: #d4af37; text-decoration: none; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background: #d4af37; color: #000; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; padding: 20px; }
+        .gallery img { width: 100%; height: 400px; object-fit: cover; border: 1px solid #333; }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="hero-section">
+    <div class="hero">
         <h1>Hotel Indigo Inn</h1>
-        <p>Comfort and luxury in the heart of Khargone</p>
-        <a href="https://wa.me/919425415559" class="btn btn-light btn-lg">Book Now on WhatsApp</a>
+        <p>Experience Absolute Elegance & Comfort</p>
+        <a href="https://wa.me/919425415559" class="btn">BOOK YOUR SUITE</a>
     </div>
 
-    <!-- Gallery -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Our Gallery</h2>
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <img src="screenshot1.jpg" class="gallery-img" alt="Hotel Photo">
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="screenshot2.jpg" class="gallery-img" alt="Hotel Photo">
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="screenshot3.jpg" class="gallery-img" alt="Hotel Photo">
-            </div>
-        </div>
+    <div class="gallery">
+        <img src="screenshot1.jpg" alt="Interior">
+        <img src="screenshot2.jpg" alt="Room">
+        <img src="screenshot3.jpg" alt="View">
     </div>
-
-    <!-- Footer -->
-    <footer class="text-center mt-5 p-4 bg-light">
-        <p>Location: Khandwa Road, Khargone, Madhya Pradesh</p>
-        <p>&copy; 2026 Hotel Indigo Inn</p>
-    </footer>
 
 </body>
 </html>
