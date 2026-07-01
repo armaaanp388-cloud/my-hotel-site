@@ -1,0 +1,31 @@
+/* Style.css file */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.hero-section {
+    background-color: #0d6efd;
+    color: white;
+    padding: 60px 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: white;
+    color: #0d6efd;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
