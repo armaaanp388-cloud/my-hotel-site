@@ -4,41 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Indigo Inn - Luxury Stays</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Premium Fonts: Great Vibes for Cursive, Montserrat for readability -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; font-family: 'Montserrat', sans-serif; background: #0a0a0a; color: #e0e0e0; }
-        h1, h2 { font-family: 'Playfair Display', serif; color: #d4af37; }
         
-        .hero { height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Screenshot_2026-07-01-12-09-22-51_3d9111e2d3171bf4882369f490c087b4.jpg'); background-size: cover; background-position: center; text-align: center; }
+        /* Cursive Headings */
+        h1, h2 { font-family: 'Great Vibes', cursive; color: #d4af37; text-align: center; font-weight: normal; }
+        h1 { font-size: 4rem; margin-bottom: 0; }
+        h2 { font-size: 2.5rem; margin-top: 50px; }
         
-        .btn { padding: 18px 45px; border: 2px solid #d4af37; color: #d4af37; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; transition: 0.4s; }
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Screenshot_2026-07-01-12-09-22-51_3d9111e2d3171bf4882369f490c087b4.jpg'); background-size: cover; text-align: center; }
+        
+        .section { padding: 40px 20px; max-width: 800px; margin: auto; text-align: center; }
+        .btn { padding: 15px 30px; border: 2px solid #d4af37; color: #d4af37; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
         .btn:hover { background: #d4af37; color: #000; }
         
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 10px; padding: 20px; }
-        .gallery img { width: 100%; height: 350px; object-fit: cover; border: 1px solid #222; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; padding: 20px; }
+        .gallery img { width: 100%; height: 300px; object-fit: cover; border: 1px solid #222; }
+        
+        .review { background: #151515; padding: 20px; border-left: 3px solid #d4af37; margin: 15px auto; max-width: 600px; font-style: italic; }
     </style>
 </head>
 <body>
 
     <div class="hero">
         <h1>Hotel Indigo Inn</h1>
-        <p>Experience Absolute Elegance in Khargone</p>
+        <p style="font-size: 1.2rem; letter-spacing: 3px;">Experience Absolute Elegance</p>
         <a href="https://wa.me/919425415559" class="btn">Book Your Stay</a>
     </div>
 
-    <h2 style="text-align:center; margin-top:50px;">Our Gallery</h2>
+    <div class="section">
+        <h2>About Us</h2>
+        <p>Welcome to Hotel Indigo Inn, where timeless hospitality meets modern comfort. Nestled in the heart of Khargone, we ensure a stay that is both memorable and luxurious.</p>
+    </div>
+
+    <h2>Our Gallery</h2>
     <div class="gallery">
         <img src="Screenshot_2026-07-01-12-09-33-66_3d9111e2d3171bf4882369f490c087b4.jpg">
         <img src="Screenshot_2026-07-01-12-09-43-17_3d9111e2d3171bf4882369f490c087b4.jpg">
         <img src="Screenshot_2026-07-01-12-09-55-69_3d9111e2d3171bf4882369f490c087b4.jpg">
-        <img src="Screenshot_2026-07-01-12-10-04-71_3d9111e2d3171bf4882369f490c087b4.jpg">
-        <img src="Screenshot_2026-07-01-12-10-13-29_3d9111e2d3171bf4882369f490c087b4.jpg">
-        <img src="Screenshot_2026-07-01-12-10-25-71_3d9111e2d3171bf4882369f490c087b4.jpg">
-        <img src="Screenshot_2026-07-01-12-10-44-28_3d9111e2d3171bf4882369f490c087b4.jpg">
-        <img src="Screenshot_2026-07-01-12-10-53-96_3d9111e2d3171bf4882369f490c087b4.jpg">
-        <img src="Screenshot_2026-07-01-12-11-06-94_3d9111e2d3171bf4882369f490c087b4.jpg">
-        <img src="Screenshot_2026-07-01-12-11-15-84_3d9111e2d3171bf4882369f490c087b4.jpg">
-        <img src="Screenshot_2026-07-01-12-11-38-38_3d9111e2d3171bf4882369f490c087b4.jpg">
+    </div>
+
+    <div class="section">
+        <h2>Guest Reviews</h2>
+        <div class="review">"The most luxurious stay in Khargone. The staff was incredibly welcoming."</div>
+    </div>
+
+    <div class="section">
+        <h2>Location</h2>
+        <p>Khandwa Road, Khargone, Madhya Pradesh</p>
+        <a href="https://maps.app.goo.gl/D5GMuAjeUGdxxF589" class="btn">Get Directions</a>
     </div>
 
 </body>
